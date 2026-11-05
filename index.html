@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página educativa sobre redes de computadores, tipos de redes e equipamentos.">
+  <title>Redes de Computadores</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo" id="inicio">
+    <a class="marca" href="#inicio" aria-label="Página inicial">
+      <span class="marca-icone">⌘</span>
+      <span>Redes de Computadores</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#tipos">Tipos de Redes</a>
+      <a href="#equipamentos">Equipamentos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contacto">Contacto</a>
+      <button id="temaBtn" class="tema-btn" type="button" aria-label="Mudar tema">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-conteudo">
+        <p class="sobretitulo">TECNOLOGIA E COMUNICAÇÃO</p>
+        <h1>Redes de <span>Computadores</span></h1>
+        <p>Conectando dispositivos, pessoas e ideias em todo o mundo.</p>
+        <a class="botao" href="#sobre">Saiba mais <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-visual" role="img" aria-label="Ilustração de uma rede de computadores">
+        <div class="globo">🌐</div>
+        <div class="nodo nodo-1">💻</div><div class="nodo nodo-2">🖥️</div>
+        <div class="nodo nodo-3">📱</div><div class="nodo nodo-4">🗄️</div>
+        <div class="linha linha-1"></div><div class="linha linha-2"></div>
+        <div class="linha linha-3"></div><div class="linha linha-4"></div>
+      </div>
+    </section>
+
+    <section class="secao sobre" id="sobre">
+      <div>
+        <p class="etiqueta">CONCEITO</p>
+        <h2>O que são Redes de Computadores?</h2>
+        <p>Uma rede de computadores é um conjunto de dispositivos ligados entre si para comunicar e partilhar informações e recursos. Esses dispositivos podem incluir computadores, telemóveis, impressoras, servidores e outros equipamentos.</p>
+        <p>As redes são utilizadas em casas, escolas, empresas e na Internet, facilitando a comunicação e o acesso à informação.</p>
+      </div>
+      <div class="cartao-ilustracao">
+        <span class="rede-simbolo">◎</span>
+        <div class="mini-rede"><span>PC</span><i></i><span>PC</span><i></i><span>Servidor</span></div>
+        <p>Dispositivos ligados para partilhar dados</p>
+      </div>
+    </section>
+
+    <section class="secao faixa" id="tipos">
+      <p class="etiqueta">CLASSIFICAÇÃO</p>
+      <h2>Tipos de Redes</h2>
+      <div class="grelha quatro">
+        <article class="cartao">
+          <div class="icone">⌂</div><h3>LAN</h3><p class="subtitulo">(Rede Local)</p>
+          <p>Abrange uma área pequena, como uma casa, uma escola ou um escritório.</p>
+        </article>
+        <article class="cartao">
+          <div class="icone">▦</div><h3>MAN</h3><p class="subtitulo">(Rede Metropolitana)</p>
+          <p>Interliga redes dentro de uma cidade ou de uma região metropolitana.</p>
+        </article>
+        <article class="cartao">
+          <div class="icone">🌐</div><h3>WAN</h3><p class="subtitulo">(Rede de Longa Distância)</p>
+          <p>Conecta redes a grandes distâncias, entre países e continentes.</p>
+        </article>
+        <article class="cartao">
+          <div class="icone">◉</div><h3>WLAN</h3><p class="subtitulo">(Rede Local Sem Fios)</p>
+          <p>Utiliza ondas de rádio para ligar dispositivos sem cabos de rede.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao" id="equipamentos">
+      <p class="etiqueta">COMPONENTES</p>
+      <h2>Equipamentos de Rede</h2>
+      <div class="grelha cinco">
+        <article class="equipamento"><div class="equipamento-icone">📡</div><h3>Roteador</h3><p>Encaminha dados entre redes diferentes.</p></article>
+        <article class="equipamento"><div class="equipamento-icone">🔀</div><h3>Switch</h3><p>Interliga dispositivos numa rede local.</p></article>
+        <article class="equipamento"><div class="equipamento-icone">🔗</div><h3>Hub</h3><p>Envia os dados recebidos para as portas ligadas.</p></article>
+        <article class="equipamento"><div class="equipamento-icone">🗄️</div><h3>Servidor</h3><p>Disponibiliza serviços e recursos na rede.</p></article>
+        <article class="equipamento"><div class="equipamento-icone">〰️</div><h3>Cabo de Rede</h3><p>Transporta dados entre dispositivos ligados por cabo.</p></article>
+      </div>
+    </section>
+
+    <section class="secao vantagens">
+      <p class="etiqueta">BENEFÍCIOS</p><h2>Vantagens das Redes de Computadores</h2>
+      <div class="grelha quatro">
+        <article class="vantagem"><span>🌍</span><h3>Partilha de recursos</h3><p>Permite partilhar ficheiros, impressoras e ligação à Internet.</p></article>
+        <article class="vantagem"><span>🔒</span><h3>Segurança</h3><p>Com boas práticas, ajuda a proteger dados e controlar acessos.</p></article>
+        <article class="vantagem"><span>⚡</span><h3>Eficiência</h3><p>Facilita a comunicação e o trabalho em equipa.</p></article>
+        <article class="vantagem"><span>👥</span><h3>Conectividade</h3><p>Aproxima pessoas, instituições e empresas.</p></article>
+      </div>
+    </section>
+
+    <section class="secao" id="galeria">
+      <p class="etiqueta">EM IMAGENS</p><h2>Galeria</h2>
+      <div class="grelha galeria">
+        <div class="foto foto-1"><span>Cabos de rede</span></div>
+        <div class="foto foto-2"><span>Centro de dados</span></div>
+        <div class="foto foto-3"><span>Dispositivos ligados</span></div>
+        <div class="foto foto-4"><span>Ligação sem fios</span></div>
+      </div>
+    </section>
+
+    <section class="secao contacto" id="contacto">
+      <div class="contacto-info">
+        <p class="etiqueta">FALE CONNOSCO</p><h2>Entre em Contacto</h2>
+        <p>Tem alguma dúvida ou quer saber mais sobre redes de computadores? Envie-nos uma mensagem.</p>
+        <p>☎ &nbsp; +258 84 7133614</p>
+        <p>✉ &nbsp; mainaguilhermemabunda@gmai.com</p>
+        <p>⌖ &nbsp; Moçambique</p>
+      </div>
+      <form id="contactForm">
+        <label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="O seu nome" required>
+        <label for="email">Email</label><input id="email" name="email" type="email" placeholder="nome@exemplo.com" required>
+        <label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva a sua mensagem..." required></textarea>
+        <button class="botao enviar" type="submit">Enviar mensagem ➤</button>
+        <p id="formAviso" class="form-aviso" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <a class="marca marca-rodape" href="#inicio">⌘ Redes de Computadores</a>
+    <p>Tecnologia que aproxima o mundo.</p>
+    <p class="copyright">© <span id="ano"></span> Redes de Computadores. Trabalho educativo.</p>
+    <a class="voltar" href="#inicio" aria-label="Voltar ao início">↑</a>
+  </footer>
+</body>
+</html>

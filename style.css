@@ -1,0 +1,100 @@
+/* Estilos da página Redes de Computadores */
+:root {
+  --azul-escuro: #082b50;
+  --azul: #087cf0;
+  --azul-claro: #eaf6ff;
+  --texto: #15263a;
+  --fundo: #ffffff;
+  --cartao: #f8fbff;
+  --borda: #d9e9f8;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--texto); background: var(--fundo); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+.topo { background: var(--azul-escuro); color: white; display: flex; align-items: center; justify-content: space-between; padding: 14px 5%; gap: 20px; position: sticky; top: 0; z-index: 10; box-shadow: 0 3px 14px #00182c30; }
+.marca { font-size: 1.08rem; font-weight: 700; display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.marca-icone { color: #52d7ff; font-size: 1.8rem; }
+nav { display: flex; align-items: center; gap: clamp(10px, 2vw, 25px); }
+nav a { font-size: .91rem; transition: color .2s; }
+nav a:hover { color: #54d9ff; }
+.tema-btn, .menu-toggle { color: white; background: transparent; border: 1px solid #ffffff55; border-radius: 50%; width: 38px; height: 38px; cursor: pointer; font-size: 1.2rem; }
+.menu-toggle { display: none; border-radius: 8px; }
+.hero { min-height: 340px; padding: 50px 7%; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 25px; color: white; background: radial-gradient(circle at 75% 40%, #075da6 0, #062a4c 38%, #03182d 100%); overflow: hidden; }
+.sobretitulo, .etiqueta { color: #08a8ee; font-size: .76rem; font-weight: 800; letter-spacing: 2px; margin: 0 0 8px; }
+.hero h1 { font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.08; margin: 0 0 15px; }
+.hero h1 span { display: block; color: #43d2ff; }
+.hero-conteudo > p:not(.sobretitulo) { max-width: 430px; font-size: 1.05rem; }
+.botao { display: inline-flex; justify-content: center; align-items: center; gap: 14px; margin-top: 12px; padding: 11px 21px; background: var(--azul); color: white; border: 0; border-radius: 28px; font-weight: 700; cursor: pointer; transition: transform .2s, background .2s; }
+.botao:hover { background: #0064c9; transform: translateY(-2px); }
+.hero-visual { min-height: 230px; position: relative; display: grid; place-items: center; background-image: radial-gradient(#29c9ff44 1px, transparent 1px); background-size: 20px 20px; }
+.globo { font-size: 6rem; filter: drop-shadow(0 0 22px #00aaff); z-index: 1; }
+.nodo { position: absolute; font-size: 2.2rem; padding: 12px; border: 1px solid #36caff; border-radius: 14px; background: #07335a; box-shadow: 0 0 20px #00aaff55; z-index: 2; }
+.nodo-1 { top: 8%; left: 10%; }.nodo-2 { top: 8%; right: 10%; }.nodo-3 { bottom: 8%; left: 15%; }.nodo-4 { bottom: 8%; right: 13%; }
+.linha { position: absolute; height: 2px; width: 35%; background: #2acbff; transform-origin: left; opacity: .8; }
+.linha-1 { top: 27%; left: 25%; transform: rotate(25deg); }.linha-2 { top: 28%; left: 62%; transform: rotate(145deg); }.linha-3 { bottom: 24%; left: 28%; transform: rotate(-25deg); }.linha-4 { bottom: 24%; left: 63%; transform: rotate(-155deg); }
+.secao { padding: 45px 6%; }
+.secao h2 { color: var(--azul-escuro); font-size: clamp(1.55rem, 3vw, 2rem); line-height: 1.2; margin: 0 0 20px; }
+.sobre { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 45px; }
+.sobre p:not(.etiqueta) { max-width: 650px; }
+.cartao-ilustracao { text-align: center; padding: 25px; border-radius: 18px; color: white; background: linear-gradient(135deg, #06305a, #087bd2); min-height: 210px; display: flex; flex-direction: column; justify-content: center; }
+.rede-simbolo { font-size: 4.5rem; line-height: 1.2; }
+.mini-rede { display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; }
+.mini-rede span { border: 1px solid #8de7ff; padding: 6px 9px; border-radius: 7px; font-size: .8rem; }
+.mini-rede i { width: 15px; height: 2px; background: #8de7ff; }
+.faixa { background: var(--azul-claro); }
+.grelha { display: grid; gap: 16px; }
+.quatro { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cinco { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.cartao, .equipamento { text-align: center; background: var(--fundo); border: 1px solid var(--borda); border-radius: 12px; padding: 20px 14px; box-shadow: 0 5px 14px #0b4e8210; }
+.icone { color: #0874c9; font-size: 2.6rem; line-height: 1.2; }
+.cartao h3, .equipamento h3, .vantagem h3 { color: var(--azul-escuro); margin: 8px 0 0; }
+.cartao .subtitulo { color: #0874c9; font-size: .85rem; margin: 0 0 10px; }
+.cartao p:last-child, .equipamento p, .vantagem p { font-size: .9rem; margin-bottom: 0; }
+.equipamento { padding: 18px 10px; }
+.equipamento-icone { font-size: 2.7rem; background: var(--azul-claro); border-radius: 10px; padding: 12px 0; }
+.equipamento h3 { font-size: 1rem; }
+.vantagens { background: linear-gradient(180deg, var(--fundo), var(--azul-claro)); }
+.vantagem { text-align: center; padding: 18px 12px; }
+.vantagem span { font-size: 2.5rem; }
+.galeria { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.foto { min-height: 155px; display: flex; align-items: end; border-radius: 12px; overflow: hidden; background-size: cover; background-position: center; box-shadow: inset 0 -70px 50px -40px #00172c; }
+.foto span { color: white; font-weight: 700; padding: 14px; }
+.foto-1 { background-image: linear-gradient(135deg, #0869ac, #0b203a); }
+.foto-2 { background-image: linear-gradient(135deg, #23435c, #071321); }
+.foto-3 { background-image: linear-gradient(135deg, #0d83d7, #041c3d); }
+.foto-4 { background-image: linear-gradient(135deg, #4a90b8, #102b49); }
+.contacto { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; background: linear-gradient(135deg, #0a3a67, #061e39); color: white; border-radius: 18px; margin: 0 4% 45px; padding: 35px; }
+.contacto h2 { color: white; }
+.contacto .etiqueta { color: #64ddff; }
+.contacto-info p { max-width: 450px; }
+form { display: flex; flex-direction: column; gap: 7px; }
+form label { font-size: .9rem; font-weight: 700; }
+input, textarea { font: inherit; padding: 12px 13px; border-radius: 7px; border: 1px solid #c5d9eb; background: #fff; color: #15263a; width: 100%; }
+input:focus, textarea:focus { outline: 2px solid #48caff; border-color: transparent; }
+.enviar { width: 100%; border-radius: 7px; margin-top: 8px; }
+.form-aviso { min-height: 1.3em; margin: 0; font-size: .9rem; color: #9df0ff; }
+.rodape { position: relative; background: #041a30; color: white; text-align: center; padding: 28px 6%; }
+.marca-rodape { justify-content: center; }
+.rodape p { margin: 5px 0; }
+.copyright { font-size: .8rem; opacity: .8; margin-top: 16px !important; }
+.voltar { position: absolute; right: 4%; top: 35%; background: var(--azul); color: white; width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; font-size: 1.4rem; }
+body.escuro { --texto: #e5effa; --fundo: #0b1a2a; --cartao: #10243a; --azul-claro: #102b43; --borda: #244663; }
+body.escuro .secao h2, body.escuro .cartao h3, body.escuro .equipamento h3, body.escuro .vantagem h3 { color: #d7efff; }
+body.escuro .foto { border: 1px solid #244663; }
+@media (max-width: 900px) {
+  .topo { padding: 12px 4%; }.menu-toggle { display: block; margin-left: auto; }
+  nav { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 18px 5%; background: var(--azul-escuro); flex-direction: column; align-items: stretch; gap: 14px; }
+  nav.aberto { display: flex; } nav a { padding: 5px 0; }.tema-btn { align-self: flex-start; }
+  .hero { padding: 40px 6%; }.quatro { grid-template-columns: repeat(2, minmax(0, 1fr)); }.cinco { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .sobre { gap: 25px; }.galeria { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .marca { font-size: .92rem; }.marca-icone { font-size: 1.5rem; }
+  .hero { grid-template-columns: 1fr; padding: 38px 6%; }.hero-visual { min-height: 210px; }
+  .secao { padding: 34px 5%; }.sobre, .contacto { grid-template-columns: 1fr; }
+  .quatro, .cinco { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contacto { margin: 0 3% 30px; padding: 25px 20px; }
+  .voltar { right: 5%; top: 12px; }.rodape { padding-top: 30px; }
+}
+@media (max-width: 380px) { .quatro, .cinco, .galeria { grid-template-columns: 1fr; } }
